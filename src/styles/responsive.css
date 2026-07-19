@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .section {
+    width: min(100% - 30px, var(--container-width));
+
+    padding: 70px 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .energy-scene {
+    width: 100%;
+    height: 500px;
+  }
+
+  .energy-orb {
+    left: 20%;
+  }
+}

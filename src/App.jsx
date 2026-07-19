@@ -107,32 +107,53 @@ function App() {
       <main>
         <section className="hero">
           <div className="hero-content">
-            <p className="hero-subtitle">Привіт, мене звати</p>
+            <p className="hero-label">FULL STACK DEVELOPER</p>
 
             <h1>
-              Владислав <span>Коріненко</span>
+              Владислав
+              <span>Коріненко</span>
             </h1>
 
-            <h2>Full Stack Developer</h2>
-
             <p className="hero-description">
-              Створюю сучасні вебзастосунки та розвиваюся у напрямку Full Stack
-              Development.
+              Создаю современные веб-приложения, развиваюсь в Full Stack
+              разработке и превращаю идеи в работающие продукты.
             </p>
 
             <div className="hero-buttons">
-              <a href="#projects" className="button primary">
-                Мої проєкти
+              <a href="#projects" className="primary-button">
+                Мои проекты
               </a>
 
-              <a href="#contacts" className="button secondary">
-                Зв'язатися зі мною
+              <a href="#contacts" className="secondary-button">
+                Связаться со мной
               </a>
             </div>
           </div>
 
-          <div className="hero-image">
-            <div className="image-placeholder">VK</div>
+          <div className="hero-visual">
+            <div className="energy-scene">
+              <div className="energy-orb">
+                <div className="orb-core"></div>
+
+                <div className="energy-ring ring-one">
+                  <span className="energy-particle particle-one"></span>
+                </div>
+
+                <div className="energy-ring ring-two">
+                  <span className="energy-particle particle-two"></span>
+                </div>
+
+                <div className="energy-ring ring-three">
+                  <span className="energy-particle particle-three"></span>
+                </div>
+              </div>
+
+              <img
+                src="./images/vladislav.jpg"
+                alt="Vladislav Korinenko"
+                className="hero-photo"
+              />
+            </div>
           </div>
         </section>
 

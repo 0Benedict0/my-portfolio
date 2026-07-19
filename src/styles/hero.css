@@ -1,0 +1,125 @@
+.hero {
+  min-height: 90vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  gap: 60px;
+}
+
+.hero-label {
+  margin-bottom: 25px;
+
+  color: var(--color-primary);
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  margin-bottom: 30px;
+
+  font-size: clamp(52px, 8vw, 100px);
+  line-height: 0.95;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: var(--color-primary);
+}
+
+.hero-description {
+  max-width: 550px;
+  margin-bottom: 35px;
+
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 24px;
+  border-radius: var(--radius-small);
+
+  transition: var(--transition-fast);
+}
+
+.primary-button {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.primary-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 20px var(--color-primary),
+    0 0 40px var(--color-primary-dark);
+}
+
+.secondary-button {
+  border: 1px solid var(--color-border);
+}
+
+.secondary-button:hover {
+  border-color: var(--color-primary);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.energy-scene {
+  position: relative;
+
+  width: 500px;
+  height: 600px;
+
+  perspective: 1000px;
+}
+
+.energy-orb {
+  position: absolute;
+  z-index: 2;
+
+  top: 35%;
+  left: 15%;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
+  animation: orbFloat 4s ease-in-out infinite;
+}
+
+.orb-core {
+  position: absolute;
+  inset: 20px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle at 35% 30%,
+    #ffffff,
+    #38bdf8 15%,
+    #2563eb 45%,
+    #020617 75%
+  );
+
+  box-shadow:
+    0 0 20px var(--color-primary),
+    0 0 60px var(--color-primary-dark),
+    0 0 120px #1d4ed8;
+
+  animation: orbRotate 5s linear infinite;
+}
